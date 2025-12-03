@@ -8,7 +8,7 @@ Week 3 assignment - static clicker game
 
 <!-- TODO: Go through each of the principles and write down at least one way you’ll use it in your 'clicker game' project this week, and in projects moving forward.  -->
 
-# ESSENTIALS
+## ESSENTIALS
 
 - Type of Site:
   'Clicker game' site - a simple static game site for a user to play
@@ -32,7 +32,7 @@ Week 3 assignment - static clicker game
 
 <!-- --- -->
 
-# EXTRAS
+## EXTRAS
 
 - Contrast:
   I will implement a :hover pseudoclass to any buttons that require special attention; mostly use non-fill where possible
