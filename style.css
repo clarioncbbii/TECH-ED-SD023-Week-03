@@ -1,6 +1,11 @@
+/* for a more complex reset, instead of *; follow Manny's link*/
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+}
+
+body {
   background-color: rgba(0, 128, 128, 0.25);
 }
