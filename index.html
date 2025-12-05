@@ -11,13 +11,20 @@
   <body>
     <!-- These are the bare minimum element requirements needed for the assignment: -->
     <!-- title -->
-    <h1>KITTY KLICKAH</h1>
-    <!-- a clickable element, e.g. an image -->
+    <header>
+      <h1>KITTY KLICKAH</h1>
+      <h2>A kitty enjoys nothing more than lil' treaties!</h2>
+    </header>
+
+    <!-- a clickable element, e.g. a button with an image -->
     <div>
-      <img
-        src="./assets/kitty-image.png"
-        alt="Illustration of cute orange cat"
-      />
+      <button id="image-button">
+        <img
+          id="cat-image"
+          src="./assets/kitty-image.png"
+          alt="Illustration of cute orange cat"
+        />
+      </button>
       <figcaption>
         Illustration by
         <a
@@ -33,8 +40,11 @@
     </div>
     <!-- game info -->
     <p>Total cookie count: 0</p>
-    <p>Cookies per second (cps): 0</p>
+    <p>Cookies per second (CPS): 0</p>
     <!-- container for the shop upgrades -->
-    <section id="shop-container"></section>
+    <section id="shop-container">
+      <h2 id="shop-title">FANCY AN UPGRADE? TAKE YOUR PICK:</h2>
+    </section>
+    <footer>fueled by cats & cookies since '25</footer>
   </body>
 </html>

@@ -47,7 +47,7 @@ localStorage.setItem("user stats", stringifiedStats);
 //- you need to fetch the upgrades from the API
 //- you need to create multiple DOM elements to contain the upgrades (do this with a loop)
 
-async function getData(url) {
+async function getData() {
   // fetch() will get data from a specific API url
   const response = await fetch(
     "https://cookie-upgrade-api.vercel.app/api/upgrades"
@@ -58,7 +58,18 @@ async function getData(url) {
   return data;
 }
 
-getData("https://cookie-upgrade-api.vercel.app/api/upgrades");
+const images = [
+  "../TECH-ED-SD023-Week-03/assets/automatic.png", //automatic clicker
+  "../TECH-ED-SD023-Week-03/assets/oven.png", //enhanced oven
+  "../TECH-ED-SD023-Week-03/assets/cookie-farm.png", //cookie farm
+  "../TECH-ED-SD023-Week-03/assets/robot.png", //robot baker
+  "../TECH-ED-SD023-Week-03/assets/factory.png", //cookie factory
+  "../TECH-ED-SD023-Week-03/assets/flour.png", //magic flour
+  "../TECH-ED-SD023-Week-03/assets/time-machine.png", //time machine
+  "../TECH-ED-SD023-Week-03/assets/quantum.png", //quantum oven
+  "../TECH-ED-SD023-Week-03/assets/alien.png", //alien technology
+  "../TECH-ED-SD023-Week-03/assets/interdimensional.png", //interdimensional baker
+];
 
 //TODO: Create DOM elements for the shop upgrades
 //- create the element
@@ -70,43 +81,55 @@ getData("https://cookie-upgrade-api.vercel.app/api/upgrades");
 
 // ** Create the function to create each upgrade in the shop **
 // I am selecting the shop container and storing it in a variable
-function createUpgrades() {
+async function createUpgrades() {
+  const itemData = await getData();
   const shopContainer = document.getElementById("shop-container");
 
   //for each item (upgrade) in the shop, I need the function to create a div + repeat a number of actions (loop):
-  const shopItem = document.createElement("div");
 
-  // I need it to create p-elements for each of its properties
-  for (let i = 0; i < data.length; i++) {
-    const upgradeName = document.createElement("p");
+  // I need it to create elements for each of its properties
+  for (let i = 0; i < itemData.length; i++) {
+    const shopItems = document.createElement("div");
+    const upgradeName = document.createElement("h3");
     const upgradeCost = document.createElement("p");
     const upgradeIncrease = document.createElement("p");
+    const buyButton = document.createElement("button");
+    const itemImage = document.createElement("img");
+
     // I need it to update the textContent using the API data
+    upgradeName.textContent = itemData[i].name;
+    upgradeCost.textContent = `Cost: ${itemData[i].cost}`;
+    upgradeIncrease.textContent = `CPS Increase: ${itemData[i].increase}`;
+    buyButton.textContent = `BUY ME`;
+    itemImage.src = images[i];
 
-    upgradeName.textContext = data[i].name;
-    upgradeCost.textContext = data[i].cost;
-    upgradeIncrease.textContext = data[i].increase;
     // I need it to assign a class name
-
     upgradeName.className = "upgrade-name";
     upgradeCost.className = "upgrade-cost";
     upgradeIncrease.className = "upgrade-increase";
-    shopItem.className = "shop-item";
+    shopItems.className = "shop-item";
+    buyButton.className = "buy-button";
+    itemImage.className = "item-image";
+
     // I need it to append the name, cost and increase to the div in question
+    shopItems.appendChild(upgradeName);
+    shopItems.appendChild(upgradeCost);
+    shopItems.appendChild(upgradeIncrease);
+    shopItems.appendChild(buyButton);
+    shopItems.appendChild(itemImage);
 
-    shopItem.appendChild(upgradeName);
-    shopItem.appendChild(upgradeCost);
-    shopItem.appendChild(upgradeIncrease);
     // I need to append each shop item container to the shop container for easier styling
+    shopContainer.appendChild(shopItems);
 
-    shopContainer.appendChild(shopItem);
+    console.log(itemData[i]);
   }
 }
 //then I call the function
 createUpgrades();
 
 //TODO: Create function(s) to handle the purchase action
-//- the user needs a BUTTON to buy the item
+//- the user needs a BUTTON to buy the item; create the button above in loop
+
 //- when the user clicks the button, two things need to happen:
 //(1) subtract the cost of the upgrade from totalCookieCount
 //(2) add increase value to cps
