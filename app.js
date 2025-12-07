@@ -155,7 +155,7 @@ function buyMe(currentItemData) {
 
     //if user does not have enough cookies, alert user
   } else {
-    alert("Uh-oh! You're gonna needs more treats than that!");
+    alert("Uh-oh! You're gonna needs more treatsies than that!");
   }
 }
 
