@@ -7,14 +7,16 @@ Week 3 assignment - static clicker game (Kitty Klickah)
 ## REFLECTION:
 
 - Required:
-  🎯 What requirements did you achieve?
+
+🎯 What requirements did you achieve?
 
 🎯 Were there any requirements or goals that you were unable to achieve?
 
 🎯 If so, what was it that you found difficult about these tasks?
 
 - Optional:
-  🏹 Feel free to add any other reflections you would like to share about your submission, for example:
+
+🏹 Feel free to add any other reflections you would like to share about your submission, for example:
 
 Requesting feedback about a specific part of your submission.
 
@@ -43,6 +45,10 @@ Shop item images:
 - https://www.flaticon.com/free-icon/oven_3565401?term=oven&page=1&position=1&origin=search&related_id=3565401
 - https://www.flaticon.com/free-icon/effective_1728411?term=automatic&page=1&position=3&origin=search&related_id=1728411
 
-<TBC>Header background:
+Header/footer background:
 
 - https://unsplash.com/s/illustrations/cute-cats-wallpaper?license=free
+
+Kitty image:
+
+- https://unsplash.com/illustrations/an-orange-cat-with-a-raised-tail-2uR7BOZi3ZQ

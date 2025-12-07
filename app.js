@@ -29,7 +29,7 @@ console.log("HAWAIYU!");
 // or save the variables in an object
 // ** --> my preference, I think, since it is all-encompasing & you can use array index to pick the bits you need at a given time**
 let userStats = {
-  cookieCount: 100,
+  cookieCount: 0,
   cpsCount: 0,
 };
 
@@ -39,7 +39,9 @@ console.log(userStats);
 const userData = localStorage.getItem("userStats");
 
 const parsedUserData = JSON.parse(userData);
-userStats = parsedUserData;
+if (parsedUserData) {
+  userStats = parsedUserData;
+}
 
 console.log(userData);
 
@@ -167,7 +169,7 @@ kittyImage.addEventListener("click", increment);
 
 function increment() {
   userStats.cookieCount++;
-  cookieDisplay.innerText = `Total cookie count: ${userStats.cookieCount}`; // Update the display
+  cookieDisplay.innerText = `TOTAL COOKIE COUNT: ${userStats.cookieCount}`; // Update the display
 }
 
 // ==================================================================================================================================================================== //
@@ -182,8 +184,8 @@ setInterval(function () {
   userStats.cookieCount += userStats.cpsCount; //totalCookieCount = totalCookieCount + cps
 
   //update the DOM to reflect the changes in the values
-  cookieDisplay.innerText = `Total cookie count: ${userStats.cookieCount}`; // Update the display
-  cpsDisplay.innerText = `Cookies per second (CPS): ${userStats.cpsCount}`; // Update the display
+  cookieDisplay.innerText = `TOTAL COOKIE COUNT: ${userStats.cookieCount}`; // Update the display
+  cpsDisplay.innerText = `COOKIES PER SECOND (CPS): ${userStats.cpsCount}`; // Update the display
 
   //save the values in local storage
   const stringifiedStats = JSON.stringify(userStats);
