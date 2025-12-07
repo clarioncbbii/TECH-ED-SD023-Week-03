@@ -6,9 +6,10 @@ Week 3 assignment - static clicker game (Kitty Klickah)
 
 ## REFLECTION:
 
-- Required:
+### Required:
 
-🎯 What requirements did you achieve?
+What requirements did you achieve?
+Based on the above, I conclude that I have met all the requirements for this assignment:
 
 - the site fetches upgrade data from the API
 - I have widely used functions to keep code organised
@@ -16,30 +17,38 @@ Week 3 assignment - static clicker game (Kitty Klickah)
 - Local storage keeps hold of my cookie count and CPS allowing me to pick the game back up after closing a sessions
 - I have an interval to increment my cookie count each second and update the DOM
 
-Based on the above, I conclude that I have met all the requirements for this assignment.
+Were there any requirements or goals that you were unable to achieve?
 
-🎯 Were there any requirements or goals that you were unable to achieve?
-As far as I can see there were none, to my genuine astonishment
+- As far as I can see there were none, to my genuine astonishment
 
-🎯 If so, what was it that you found difficult about these tasks?
+If so, what was it that you found difficult about these tasks?
 Though I got everything implemented, my difficulties with grasping functions definitely reared its head.
 
-- Optional:
+### Optional:
 
-🏹 Feel free to add any other reflections you would like to share about your submission, for example:
+Feel free to add any other reflections you would like to share about your submission, for example:
 
 Requesting feedback about a specific part of your submission.
-Some commentary on the WET/DRY state of my code would be appreciated. Most of my code is comments but I wonder if there were efficiences I missed.
-Once I got my JS working, I was scared to make any changes, lest I fail to rectify them without help.
+
+- i would like some commentary on the WET/DRY state of my code would be appreciated. Most of my code is comments but I wonder if there were efficiences I missed.
+  Once I got my JS working, I was scared to make any changes, lest I fail to rectify them without help.
+
+- As far as stretch requirements, I think I managed to consolidate my upgrade management in a single function but frankly, I am not totally sure. I did not go into this assignment with the aim to do any stretch goals because the basic requirements were already challenging for me. Some insight here would also be nice.
 
 What useful external sources helped you complete the assignment (e.g Youtube tutorials)?
-GeeksForGeeks, MDN, W3 Schools, Sam/Bertie/Manny was very helpful - oddly enough, fellow course mates made things a bit more confusing so I refrained from them on this occassion
+
+- My usual set of tools - GeeksForGeeks, MDN, W3 Schools, Sam/Bertie/Manny was very helpful - oddly enough, fellow course mates made things a bit more confusing so I refrained from them on this occassion
 
 What errors or bugs did you encounter while completing your assignment? How did you solve them?
-At some point I somehow wrecked my CSS code and could no longer get my button the highlight and change on hover. I simply copied the CSS from my previous Github push and started again from that 'save point'
+
+- At some point I somehow wrecked my CSS code and could no longer get my button the highlight and change on hover. I simply copied the CSS from my previous Github push and started again from that 'save point'
+- I encountered several bugs with my local storage which in the end was rectified with 2 pcs of syntax
 
 What went really well and what could have gone better?
-I felt very anxious around this assignment, it was frankly one of the hardest things I have done in recent time. Without assistance from the various teachers I would not have been able to do it I think. What helped and really works for me is doing JS related stuff as a priority. On thu and fri I spent most of my time on JS, only occasionally dipping to the HTML and CSS when absolutely needed for clairty of coding. Doing this makes my weekends much lighter, because styling is generally less difficult for me.
+
+- I felt very anxious around this assignment, it was frankly one of the hardest things I have done in recent time. Without assistance from the various teachers I would not have been able to do it I think.
+- What helped and really works for me is doing JS related stuff as a priority. On thu and fri I spent most of my time on JS, only occasionally dipping to the HTML and CSS when absolutely needed for clairty of coding. Doing this makes my weekends much lighter, because styling is generally less difficult for me.
+- Dividing my work like this also allows me a nice long break from coding - from friday evening until sunday afternoon I have family commitments that take my mind of coding and allows me to return with fresh eyes
 
 <!-- --------------------------------------- -->
 
