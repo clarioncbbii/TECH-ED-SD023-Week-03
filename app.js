@@ -11,7 +11,7 @@ console.log("HAWAIYU!");
 //- We will get the shop upgrade data from the API provided as part of the assignment: https://cookie-upgrade-api.vercel.app/api/upgrades
 //- To create the logic for the shop upgrades, we have two options:
 //OPTION 1: You could have a function to handle each upgrade
-//OPTION 2:You could have a reusable function that works for ALL upgraded
+//OPTION 2:You could have a reusable function that works for ALL upgrades
 // ** --> Option 2 is my preference I think, if I can figure it out; Possibly a function that takes values from an array of objects that contains the all the values required for the shop to work? **
 
 //TIP ON LOCAL STORAGE:
